@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>06 健康區｜健康稻理－食在永續</title>
+  <meta name="description" content="第三組線上策展：走進濁水溪畔的鹿光米農場，從田裡一路走回你的餐桌。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="主選單">
+      <a class="logo" href="index.html">🌾 健康稻理</a>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="brand.html">01 品牌與人</a></li>
+        <li><a href="land.html">02 和土地相處</a></li>
+        <li><a href="neighbors.html">03 田邊鄰居</a></li>
+        <li><a href="sun.html">04 日光曬穀</a></li>
+        <li><a href="table.html">05 回到生活</a></li>
+        <li><a href="health.html" aria-current="page">06 健康區</a></li>
+        <li><a href="about.html">關於本展</a></li>
+        <li><a href="sources.html">參考資料</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 負責人：何如欣 -->
+    <header class="zone-head">
+      <span class="zone-no">展區 06</span>
+      <h1>健康區</h1>
+      <p class="hook">什麼是健康米？怎麼吃得健康？</p>
+    </header>
+    <section class="screen reveal">
+      <figure class="screen-img">
+        <img src="images/rice-milling-stages.jpg" alt="由左到右：糙米、胚芽米、白米的米粒特寫" loading="lazy">
+        <figcaption>由左到右：糙米、胚芽米、白米。Sphl／DMacks，GFDL</figcaption>
+      </figure>
+      <div class="screen-text">
+        <h2>糙米和白米，差在哪？</h2>
+        <p>稻穀去殼、保留米糠和胚芽，是<strong>糙米</strong>。</p>
+        <p>再把米糠和胚芽都碾掉，只剩中間的胚乳，就是<strong>白米</strong>。</p>
+        <p>被碾掉的那一層，正好藏著很多營養。</p>
+      </div>
+    </section>
+    <section class="reveal">
+      <h2>一碗飯（160 公克）比一比</h2>
+      <div class="panel">
+        <div class="legend"><span class="lb">糙米</span><span class="lw">白米</span></div>
+        <div class="nutri-row"><strong>熱量</strong><div class="nutri-bars"><div class="b"><i style="width:70%"></i>290 kcal</div><div class="w"><i style="width:68%"></i>283 kcal</div></div></div>
+        <div class="nutri-row"><strong>膳食纖維</strong><div class="nutri-bars"><div class="b"><i style="width:70%"></i>3.2 g</div><div class="w"><i style="width:13%"></i>0.6 g</div></div></div>
+        <div class="nutri-row"><strong>維生素 B1</strong><div class="nutri-bars"><div class="b"><i style="width:70%"></i>0.28 mg</div><div class="w"><i style="width:15%"></i>0.06 mg</div></div></div>
+        <div class="nutri-row"><strong>鎂</strong><div class="nutri-bars"><div class="b"><i style="width:70%"></i>86 mg</div><div class="w"><i style="width:13%"></i>16 mg</div></div></div>
+        <div class="nutri-row"><strong>鉀</strong><div class="nutri-bars"><div class="b"><i style="width:70%"></i>178 mg</div><div class="w"><i style="width:25%"></i>63 mg</div></div></div>
+        <p class="note">資料來源：國民健康署（TVBS 健康 2.0 轉載）。熱量差不多，膳食纖維、維生素 B1、礦物質差很多。</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2>調調看：我的一碗飯</h2>
+      <div class="panel bowl">
+        <svg viewBox="0 0 200 130" role="img" aria-label="一碗飯，深色代表糙米的比例">
+          <defs><clipPath id="bowl-clip"><path d="M20 50 Q100 40 180 50 L170 95 Q100 135 30 95 Z"/></clipPath></defs>
+          <g clip-path="url(#bowl-clip)">
+            <rect x="0" y="40" width="200" height="90" fill="#f4efe0"/>
+            <rect id="bowl-brown" x="0" y="110" width="200" height="0" fill="#a07a2a"/>
+          </g>
+          <path d="M14 55 L186 55 Q180 118 100 122 Q20 118 14 55 Z" fill="none" stroke="#2e4633" stroke-width="4"/>
+        </svg>
+        <div>
+          <label for="mix"><strong id="mix-label"></strong></label>
+          <input id="mix" type="range" min="0" max="100" step="5" value="0">
+          <div class="bowl-out" aria-live="polite">
+            <div><b id="mix-kcal">0</b>大卡</div>
+            <div><b id="mix-fiber">0</b>膳食纖維（g）</div>
+            <div><b id="mix-b1">0</b>維生素 B1（mg）</div>
+          </div>
+          <p id="mix-msg" aria-live="polite"></p>
+        </div>
+      </div>
+      <p class="note">衛福部建議每天的主食至少 1/3 是未精製的全穀雜糧；不習慣糙米口感，可以和白米混著煮。數值為依比例估算。</p>
+    </section>
+
+    <section class="todo reveal">
+      <h2>專家怎麼說？</h2>
+      <p>請訪問一位營養師或相關老師，寫下 2–3 個「怎麼吃米才健康」的重點，註明受訪者姓名、職稱與訪談日期。</p>
+    </section>
+    <div class="next-stop"><a href="about.html">看看我們為什麼做這個展</a></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>數位人文地方策展專題實作｜第三組　廖厚芳、鄭安倫、武伯大、何如欣</p>
+    <p>本網站部分文字由 AI 協助草擬，經組員查證與改寫；詳見 <a href="sources.html">參考資料與授權</a></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
